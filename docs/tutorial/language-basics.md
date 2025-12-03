@@ -459,4 +459,4 @@ fn main():
     println(f"Result: {result}")
 ```
 
-For more information, see the [Language Reference](../language-reference) and [Standard Library Reference](../standard-library).
+For more information, see the [Language Reference](../language-reference/overview) and [Standard Library Reference](../standard-library/overview).
