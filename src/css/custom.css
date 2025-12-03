@@ -1,0 +1,55 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --color-dark-coffee: #2c2416;
+  --color-deep-walnut: #4a311c;
+  --color-olive-wood: #855832;
+  --color-light-bronze: #c8956b;
+  --color-wheat: #f5deb3;
+  --color-floral-white: #fdf7ed;
+
+  --color-dark-teal: #24464d;
+  --color-pacific-cyan: #267e92;
+  --color-pacific-blue: #48b8d0;
+  --color-frosted-blue: #8ae1fc;
+  --color-light-cyan: #d9f1f8;
+
+  --ifm-background-color: var(--color-dark-coffee);
+  --ifm-font-color-base: var(--color-wheat);
+
+  --ifm-heading-color: var(--color-pacific-cyan);
+  --ifm-hero-text-color: var(--color-dark-coffee);
+
+  --ifm-navbar-background-color: var(--color-deep-walnut);
+  --ifm-navbar-link-color: var(--color-wheat);
+
+  --ifm-button-background-color: var(--color-pacific-blue);
+  --ifm-button-color: var(--color-light-cyan);
+
+  --ifm-footer-background-color: var(--color-dark-teal);
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-code-font-size: 90%;
+}
+
+.hero--primary {
+  --ifm-hero-background-color: var(--color-wheat);
+}
+
+.hero__title {
+  font-size: 2rem;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: var(--color-dark-teal);
+  --ifm-footer-color: var(--color-light-cyan);
+}

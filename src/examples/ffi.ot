@@ -1,0 +1,6 @@
+use rust:serde_json
+
+fn main:
+    let payload = "{\"name\":\"Otter\"}"
+    let info = serde_json.from_str_try(payload)
+    println(info)  # => {"ok":true,"value":{...}}
