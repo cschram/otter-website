@@ -4,11 +4,12 @@ import CodeExample from '../components/code-example';
 import fibonacciExample from '!!raw-loader!../examples/fibonacci.ot';
 import ffiExample from '!!raw-loader!../examples/ffi.ot';
 import errorsExample from '!!raw-loader!../examples/errors.ot';
+import styles from './homepage-features.module.css';
 import '../../prism-language-otter';
 
 export default function HomepageFeatures() {
     return (
-        <main className="container margin-top--lg">
+        <main className={`container margin-top--lg ${styles.features}`}>
             <div className="row">
                 <div className="col col--6 padding--md">
                     <CodeExample source={fibonacciExample} />
