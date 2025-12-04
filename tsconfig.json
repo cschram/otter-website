@@ -2,7 +2,17 @@
   // This file is not used in compilation. It is here just for a nice editor experience.
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "@theme/*": ["./node_modules/@docusaurus/theme-classic/lib/theme/*"],
+      "@docusaurus/*": ["./node_modules/@docusaurus/core/lib/client/exports/*", "./node_modules/@docusaurus/module-type-aliases/src/*"]
+    },
+    "typeRoots": ["./node_modules/@types", "./src/types", "./node_modules/@docusaurus/module-type-aliases/src"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node"
   },
+  "include": ["src/**/*"],
   "exclude": [".docusaurus", "build"]
 }
