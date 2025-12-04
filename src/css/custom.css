@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -19,14 +22,15 @@
   --color-frosted-blue: #8ae1fc;
   --color-light-cyan: #d9f1f8;
 
+  --ifm-font-family-base: 'Roboto', Helvetica, sans-serif;
+  --ifm-font-family-monospace: 'Inconsolata', monospace;
   --ifm-link-color: var(--color-light-cyan);
   --ifm-link-hover-color: var(--color-light-bronze);
 
   --ifm-background-color: var(--color-dark-coffee);
   --ifm-font-color-base: var(--color-wheat);
 
-  --ifm-heading-color: var(--color-light-bronze);
-  --ifm-hero-text-color: var(--color-dark-coffee);
+  --ifm-heading-color: var(--color-pacific-blue);
 
   --ifm-navbar-background-color: var(--color-pacific-cyan);
   --ifm-navbar-link-color: var(--color-light-cyan);
@@ -41,27 +45,33 @@
   --ifm-menu-color-active: var(--color-wheat);
   --ifm-breadcrumb-color-active: var(--color-wheat);
 
-  --ifm-color-primary: var(--color-wheat);
+  --ifm-color-primary: var(--color-pacific-blue);
 
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ifm-code-font-size: 90%;
-}
+  --ifm-code-font-size: 100%;
 
-.hero--primary {
-  --ifm-hero-background-color: var(--color-wheat);
-}
-
-.hero__title {
-  color: var(--color-olive-wood);
-  font-size: 2rem;
-}
-
-.hero__subtitle {
-  color: var(--color-dark-walnut);
-  font-size: 1.25rem;
+  --blue-gradient: linear-gradient(45deg, var(--color-pacific-cyan),
+      var(--color-frosted-blue) 50%,
+      var(--color-dark-teal) 100%);
 }
 
 .footer--dark {
   --ifm-footer-background-color: var(--color-pacific-cyan);
   --ifm-footer-color: var(--color-light-cyan);
+}
+
+.token {
+  font-weight: 700;
+}
+
+.navbar {
+  box-shadow: 0 5px 20px #162022;
+}
+
+.button {
+  transition: scale 0.25s cubic-bezier(0.66, 0, 0.34, 1);
+}
+
+.button:hover {
+  scale: 110%;
 }

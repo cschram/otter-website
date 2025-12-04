@@ -1,1 +1,17 @@
-.homepage-header {}
+.header {
+    padding: 4rem;
+}
+
+.header p {
+    font-size: 1.75rem;
+}
+
+.getting-started-button {
+    background-color: var(--color-light-bronze);
+    border-color: transparent;
+    border-radius: 2.5rem;
+    color: var(--color-floral-white);
+    display: block;
+    margin: auto;
+    width: 10rem;
+}

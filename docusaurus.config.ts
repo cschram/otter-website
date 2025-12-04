@@ -5,8 +5,8 @@ import './prism-language-otter';
 
 const config: Config = {
   title: 'The Otter Programming Language',
-  tagline: 'Compiled, statically typed, with transparent Rust interop',
-  favicon: 'img/favicon.ico',
+  tagline: 'Simple, compiled, and type-safe with seamless Rust interoperability.',
+  favicon: 'img/otter-icon.svg',
 
   future: {
     v4: true,
@@ -71,6 +71,11 @@ const config: Config = {
           position: 'left',
           label: 'Standard Library',
           href: '/docs/standard-library/overview',
+        },
+        {
+          href: 'https://discord.gg/y3b4QuvyFk',
+          label: 'Discord',
+          position: 'right',
         },
         {
           href: 'https://github.com/jonathanmagambo/otterlang',

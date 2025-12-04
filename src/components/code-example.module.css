@@ -1,0 +1,8 @@
+.code {
+    background-image: radial-gradient(closest-side at center, rgb(40, 40, 40) 35%, transparent 140%),
+        radial-gradient(at 5% 5%, var(--color-deep-walnut) 0px, transparent 50%),
+        radial-gradient(at 95% 95%, var(--color-dark-teal) 0px, transparent 50%),
+        radial-gradient(at 95% 5%, var(--color-dark-coffee) 0px, transparent 50%);
+    border-radius: 1.5rem;
+    box-shadow: -5px 15px 30px #201c15;
+}

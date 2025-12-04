@@ -1,0 +1,25 @@
+.homepage {
+    --ifm-button-background-color: var(--color-pacific-blue);
+    margin-bottom: 3rem;
+}
+
+.homepage h1,
+.homepage h2 {
+    color: var(--color-pacific-blue);
+    background-image: var(--blue-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.homepage h1 {
+    font-size: 4rem;
+}
+
+.homepage h2 {
+    font-size: 2rem;
+}
+
+.homepage :where(.button--primary) {
+    background-color: var(--blue-gradient);
+}
