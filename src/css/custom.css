@@ -30,10 +30,12 @@
   --ifm-background-color: var(--color-dark-coffee);
   --ifm-font-color-base: var(--color-wheat);
 
-  --ifm-heading-color: var(--color-pacific-blue);
+  --ifm-heading-color: var(--color-floral-white);
+  --ifm-h1-font-size: 4.5rem;
+  --ifm-h1-line-height: 1.1;
 
-  --ifm-navbar-background-color: var(--color-pacific-cyan);
-  --ifm-navbar-link-color: var(--color-light-cyan);
+  --ifm-navbar-background-color: transparent;
+  --ifm-navbar-link-color: var(--color-wheat);
   --ifm-navbar-link-hover-color: var(--color-light-bronze);
 
   --ifm-button-background-color: var(--color-pacific-blue);
@@ -65,13 +67,48 @@
 }
 
 .navbar {
-  box-shadow: 0 5px 20px #162022;
+  background: transparent;
+  box-shadow: none;
+  padding: 1rem 2rem;
 }
 
-.button {
-  transition: scale 0.25s cubic-bezier(0.66, 0, 0.34, 1);
+.navbar__inner {
+  background: rgba(44, 36, 22, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 2rem;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  min-height: fit-content;
+  height: auto;
+  transition: background 0.3s ease;
 }
 
-.button:hover {
-  scale: 110%;
+.navbar__inner:hover {
+  background: rgba(44, 36, 22, 0.9);
+}
+
+.navbar__brand {
+  color: var(--color-wheat);
+}
+
+.navbar__item {
+  color: var(--color-wheat);
+}
+
+.navbar__link {
+  color: var(--color-wheat);
+  transition: color 0.3s ease;
+}
+
+.navbar__link:hover {
+  color: var(--color-light-bronze);
+}
+
+/* Mobile heading sizes */
+@media (max-width: 768px) {
+  :root {
+    --ifm-h1-font-size: 3rem;
+  }
 }

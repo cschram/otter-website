@@ -1,0 +1,220 @@
+.whyOtter {
+    padding: 6rem 2rem;
+    background: var(--color-dark-coffee);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contentBox {
+    background: rgba(44, 36, 22, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.heading {
+    margin: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.tabsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tabs {
+    display: flex;
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+.tab {
+    background: transparent;
+    border: none;
+    color: rgba(245, 222, 179, 0.7);
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--ifm-font-family-base);
+    position: relative;
+    border-bottom: 2px solid transparent;
+}
+
+.tab:hover {
+    color: var(--color-wheat);
+}
+
+.tabActive {
+    color: var(--color-floral-white);
+    font-weight: 600;
+    border-bottom: 2px solid var(--color-light-bronze);
+}
+
+.tabActive:hover {
+    color: var(--color-floral-white);
+}
+
+.actions {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.actionButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(200, 149, 107, 0.1);
+    border: 1px solid rgba(200, 149, 107, 0.2);
+    color: var(--color-wheat);
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--ifm-font-family-base);
+}
+
+.actionButton:hover {
+    background: rgba(200, 149, 107, 0.2);
+    border-color: rgba(200, 149, 107, 0.3);
+    color: var(--color-floral-white);
+}
+
+.actionIcon {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.codeContainer {
+    margin-bottom: 0;
+}
+
+.codeWrapper {
+    position: relative;
+}
+
+.editableCode {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: transparent;
+    caret-color: var(--color-wheat);
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: var(--ifm-font-family-monospace);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 1.5rem;
+    margin: 0;
+    z-index: 2;
+    white-space: pre;
+    overflow: hidden;
+    tab-size: 4;
+}
+
+.codeWrapper pre {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    pointer-events: none;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.getStartedButton {
+    background-color: transparent;
+    border: 1px solid rgba(245, 222, 179, 0.3);
+    border-radius: 0.5rem;
+    color: var(--color-floral-white);
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.getStartedButton:hover {
+    background-color: rgba(200, 149, 107, 0.1);
+    border-color: var(--color-light-bronze);
+    color: var(--color-floral-white);
+}
+
+@media (max-width: 768px) {
+    .whyOtter {
+        padding: 4rem 1.5rem;
+    }
+
+    .contentBox {
+        padding: 1.5rem;
+    }
+
+    .heading {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    
+    .tabsContainer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .tabs {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .tab {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+    
+    .actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    .actionButton {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.85rem;
+    }
+    
+    .codeContainer {
+        margin-bottom: 0;
+    }
+    
+    .editableCode {
+        font-size: 0.85rem;
+        padding: 1rem;
+    }
+
+    .cta {
+        margin-top: 2rem;
+    }
+}
+

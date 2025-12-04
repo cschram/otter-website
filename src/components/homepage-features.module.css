@@ -1,5 +1,189 @@
-.features {}
+.features {
+    padding: 4rem 2rem;
+    background: var(--color-dark-coffee);
+}
 
-.features p {
+.featureSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 6rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featureSection:last-child {
+    margin-bottom: 0;
+}
+
+.textColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.label {
+    font-size: 0.9rem;
+    color: rgba(245, 222, 179, 0.6);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+.mainHeading {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--color-light-bronze);
+    margin: 0;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: rgba(245, 222, 179, 0.8);
+    margin: 0;
+    line-height: 1.7;
+}
+
+.highlight {
+    color: var(--color-light-bronze);
+    font-weight: 500;
+}
+
+.codeColumn {
+    position: relative;
+}
+
+.rustFfiSection {
+    padding: 6rem 2rem;
+    background: var(--color-dark-coffee);
+    margin: 0 -2rem;
+}
+
+.rustFfiContent {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.introLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.labelLine {
+    flex: 0 0 2rem;
+    height: 1px;
+    background: rgba(245, 222, 179, 0.4);
+}
+
+.labelText {
+    font-size: 0.9rem;
+    color: rgba(245, 222, 179, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.rustFfiHeading {
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    background: linear-gradient(90deg, 
+        var(--color-light-bronze) 0%, 
+        var(--color-wheat) 50%,
+        var(--color-light-bronze) 100%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-shift 3s ease infinite;
+}
+
+@keyframes gradient-shift {
+    0%, 100% {
+        background-position: 0% center;
+    }
+    50% {
+        background-position: 100% center;
+    }
+}
+
+.rustFfiDescription {
     font-size: 1.2rem;
+    color: rgba(245, 222, 179, 0.8);
+    margin: 0;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rustFfiDescription strong {
+    color: var(--color-light-bronze);
+    font-weight: 600;
+}
+
+.rustFfiCode {
+    margin-top: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 996px) {
+    .featureSection {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-bottom: 4rem;
+    }
+    
+    .textColumn {
+        order: 1;
+    }
+    
+    .codeColumn {
+        order: 2;
+    }
+    
+    .mainHeading {
+        font-size: 2.5rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+    }
+    
+    .rustFfiSection {
+        padding: 4rem 1.5rem;
+        margin: 0 -1.5rem;
+    }
+    
+    .rustFfiHeading {
+        font-size: 3rem;
+    }
+    
+    .rustFfiDescription {
+        font-size: 1.1rem;
+    }
+    
+    .labelLine {
+        flex: 0 0 1rem;
+    }
+    
+    .labelText {
+        font-size: 0.8rem;
+    }
 }
